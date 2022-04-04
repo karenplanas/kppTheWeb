@@ -1,17 +1,37 @@
 .Nav-container {
   display: flex;
-  justify-content: flex-end;
-  padding-right: 48px;
+  justify-content: space-between;
+  padding: 24px 48px;
   align-items: center;
-  height: 70px;
-  background-color: aqua;
 }
 
 .Nav-container a {
   text-decoration: none;
+  color: var(--Black);
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .Nav-container nav {
   display: flex;
   gap: 52px;
+}
+
+.Nav-image-holder {
+  width: 50px;
+  height: 50px;
+  border: solid 1.5px;
+  border-radius: 10px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(242, 248, 248);
+  font-weight: 600;
+}
+
+.resume {
+  border: solid 1px;
+  padding: 8px;
+  border-radius: 8px;
 }
