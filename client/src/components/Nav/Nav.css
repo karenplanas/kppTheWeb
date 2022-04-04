@@ -1,0 +1,17 @@
+.Nav-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 48px;
+  align-items: center;
+  height: 70px;
+  background-color: aqua;
+}
+
+.Nav-container a {
+  text-decoration: none;
+}
+
+.Nav-container nav {
+  display: flex;
+  gap: 52px;
+}
