@@ -1,0 +1,28 @@
+.About-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 105px;
+  padding-right: 105px;
+  padding-top: var(--spacing-5);
+}
+
+.About-text {
+  max-width: 850px;
+  padding-top: var(--spacing-2);
+  padding-bottom: var(--spacing-4);
+}
+
+.About-text ul {
+  list-style: circle;
+  list-style: inside;
+  /* list-style-type: '✓ '; */
+  /* list-style-type: '✅  '; */
+  list-style-type: '✔️ ';
+}
+
+.About-list {
+  display: flex;
+  gap: var(--spacing-5);
+  padding-top: var(--spacing-2);
+  padding-left: var(--spacing-3);
+}

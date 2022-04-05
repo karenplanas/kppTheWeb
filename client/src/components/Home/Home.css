@@ -1,28 +1,25 @@
 .Home-content {
   display: flex;
+  height: 100vh;
+  background-color: aqua;
 }
 
 .Home-Text-container {
   display: flex;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 230px;
   padding-left: 105px;
   gap: var(--spacing-3);
 }
 
-.Home-Text-container h1 {
-  font-family: 'Domine', serif;
-  font-size: 4rem;
-  color: var(--Black);
-}
-
-.Home-Text-container p {
-  line-height: 40px;
-  font-size: 1.3rem;
-}
-
 .NinaReading-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  padding-top: 64px;
 }
+
+.Home-section {
+  display: flex;
+  justify-content: center;
+}
+
+
+

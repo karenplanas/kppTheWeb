@@ -25,5 +25,29 @@ body {
   background-color: var(--Bone);
 }
 
+h1 {
+  font-family: 'Domine', serif;
+  font-size: 4rem;
+  color: var(--Black);
+}
+
+h2 {
+  font-family: 'Domine', serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: var(--Black);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: var(--Black);
+}
+
+p {
+  line-height: 40px;
+  font-size: 1.3rem;
+}
+
 
 
