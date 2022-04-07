@@ -2,6 +2,7 @@
   display: flex;
   padding-top: var(--spacing-4);
   padding-bottom: var(--spacing-4);
+  gap: var(--spacing-4)
 }
 
 .Experience-list ul {
@@ -15,30 +16,12 @@
    padding-bottom: var(--spacing-3);
    gap: var(--spacing-5);
    cursor: pointer;
-   max-width: 140px;
    width: 100%;
 }
-
-.Experience-list li:hover {
-  padding-bottom: 5px;
-  border-bottom: solid 4px var(--Cotton-candy);
-  color: var(--Gray-dark);
-}
-
-.selected {
-  padding: 5px;
-  border-bottom: solid 4px var(--Cotton-candy);
-  color: var(--Gray-dark);
-  /* background-color: var(--Cotton-candy);
-  border-radius: var(--spacing-2); */
-}
-
 
 .Experience-details {
   padding-top: var(--spacing-3);
   padding-bottom: var(--spacing-3);
-  max-width: 710px;
-  min-width: 710px;
   width: 100%;
 
   max-height: 460px;
@@ -109,4 +92,44 @@ p.year {
 
 .not-bold {
   font-weight: 500;
+}
+
+.Experience-list li {
+  position: relative;
+  z-index: 10;
+}
+
+.Experience-list li:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -12px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: var(--Cotton-candy);
+  transform: translate3d(0,5px,0);
+  transition: all .2s cubic-bezier(.175,.885,.32,1.275);
+  opacity: 0;
+}
+
+.Experience-list li:nth-child(odd):hover:before {
+  opacity: 1;
+  transform: translateZ(0) rotate(1deg);
+}
+
+.Experience-list li.selected:nth-child(odd):before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1,1.1,1.1)  rotate(1deg);
+}
+
+.Experience-list li:nth-child(even):hover:before {
+  opacity: 1;
+  transform: translateZ(0) rotate(-1deg);
+}
+
+.Experience-list li.selected:nth-child(even):before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1,1.1,1.1)  rotate(-1deg);
 }
