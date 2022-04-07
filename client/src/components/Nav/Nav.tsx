@@ -10,6 +10,7 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idContact}) => {
+  // https://stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
   const scrollTo = (id: string) => {
     return (event: React.MouseEvent) => {
       event.preventDefault();

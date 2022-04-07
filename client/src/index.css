@@ -1,8 +1,11 @@
 :root {
   --White: #F2F8F8;
-  --Black:  #232320;
-  --Gray-dark: #56535f;
+  --Black: #232320;
+  --Gray-light: #7c778b;
+  --Gray: #56535f;
+  --Gray-dark: #3c3a42;
   --Bone: #fefaf6;
+  --Cotton-candy: #ffc4ff;
   --spacing: 8px;
   --spacing-2: 16px;
   --spacing-3: 24px;
@@ -21,7 +24,7 @@ body {
   font-family: Biotif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--Gray-dark);
+  color: var(--Gray);
   background-color: var(--Bone);
 }
 

@@ -1,19 +1,19 @@
 .Home-content {
   display: flex;
   height: 100vh;
-  background-color: aqua;
 }
 
 .Home-Text-container {
   display: flex;
   flex-direction: column;
   padding-top: 230px;
-  padding-left: 105px;
+  padding-left: 90px;
   gap: var(--spacing-3);
 }
 
 .NinaReading-container {
-  padding-top: 64px;
+  /* padding-top: var(--spacing-6); */
+  padding-top: 50px;
 }
 
 .Home-section {

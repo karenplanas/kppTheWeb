@@ -1,8 +1,10 @@
 import React from 'react'
 import { About } from '../About/About'
+import { Contact } from '../Contact/Contact'
 import { Experience } from '../Experience/Experience'
 import { NinaReading } from '../illustrations/NinaReading'
 import { Nav } from '../Nav/Nav'
+import { Projects } from '../Projects/Projects'
 import './Home.css'
 
 const Home : React.FC = () => {
@@ -20,8 +22,8 @@ const Home : React.FC = () => {
           </div>
         </div>
         <div className='NinaReading-container'>
-          <NinaReading width='570' height='770'/>
-          {/* <NinaReading width='535' height='723'/> */}
+          {/* <NinaReading width='570' height='770'/> */}
+          <NinaReading width='535' height='723'/>
         </div>
       </div>
 
@@ -34,11 +36,11 @@ const Home : React.FC = () => {
       </div>
 
       <div id='Projects' className='Home-section'>
-        <About />
+        <Projects />
       </div>
 
       <div id='Contact' className='Home-section'>
-        <About />
+        <Contact />
       </div>
 
     </div>

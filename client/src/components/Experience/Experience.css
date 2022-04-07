@@ -1,14 +1,14 @@
 .Experience-container {
-  padding-left: 105px;
-  padding-right: 105px;
+  /* padding-left: 105px;
+  padding-right: 105px; */
   padding-top: var(--spacing-5);
   padding-bottom: var(--spacing-5);
-  /* background-color: aquamarine; */
 }
 
 .Experience-content {
   display: flex;
   padding-top: var(--spacing-4);
+  padding-bottom: var(--spacing-4);
 }
 
 .Experience-list ul {
@@ -19,27 +19,49 @@
    font-weight: 600;
    font-size: 1.3rem;
    padding-top: var(--spacing-3);
+   padding-bottom: var(--spacing-3);
    gap: var(--spacing-5);
    cursor: pointer;
-   max-width: 150px;
+   max-width: 140px;
    width: 100%;
-   background-color: bisque;
 }
+
+.Experience-list li:hover {
+  padding-bottom: 5px;
+  border-bottom: solid 4px var(--Cotton-candy);
+  color: var(--Gray-dark);
+}
+
+.selected {
+  padding: 5px;
+  border-bottom: solid 4px var(--Cotton-candy);
+  color: var(--Gray-dark);
+  /* background-color: var(--Cotton-candy);
+  border-radius: var(--spacing-2); */
+}
+
 
 .Experience-details {
   padding-top: var(--spacing-3);
   padding-bottom: var(--spacing-3);
-  /* padding-left: var(--spacing-3); */
-  max-width: 850px;
-  min-width: 850px;
+  max-width: 710px;
+  min-width: 710px;
   width: 100%;
-}
 
+  max-height: 460px;
+  min-height: 460px;
+  height: 100%;
+}
 
 .Experience-details h3 {
   font-weight: 600;
   font-size: 1.3rem;
   color: var(--Gray-dark);
+}
+
+.Experience-title {
+  display: flex;
+  justify-content: space-between;
 }
 
 @keyframes fadeIn {
@@ -53,7 +75,7 @@
 
 .visible {
   display: block;
-  animation: fadeIn 300ms ease-in-out both;
+  /* animation: fadeIn 300ms ease-in-out both; */
 }
 
 .tasks ul {
@@ -90,4 +112,8 @@ p.year {
 
 .bold {
   font-weight: 600;
+}
+
+.not-bold {
+  font-weight: 500;
 }
