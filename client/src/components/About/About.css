@@ -1,9 +1,6 @@
 .About-container {
   display: flex;
   flex-direction: column;
-  padding-left: 105px;
-  padding-right: 105px;
-  padding-top: var(--spacing-5);
 }
 
 .About-text {
@@ -15,8 +12,6 @@
 .About-text ul {
   list-style: circle;
   list-style: inside;
-  /* list-style-type: '✓ '; */
-  /* list-style-type: '✅  '; */
   list-style-type: '✔️ ';
 }
 

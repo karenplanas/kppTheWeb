@@ -1,3 +1,10 @@
+.Home-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  align-items: center;
+}
+
 .Home-content {
   display: flex;
   height: 100vh;
@@ -19,6 +26,14 @@
 .Home-section {
   display: flex;
   justify-content: center;
+}
+
+.Home-main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-10);
+  width: 100%;
+  max-width: 850px;
 }
 
 

@@ -9,7 +9,7 @@ import './Home.css'
 
 const Home : React.FC = () => {
   return (
-    <div >
+    <div className='Home-container' >
       <Nav idHome='Home' idAbout='About' idExperience='Experience' idProjects='Projects'  idContact='Contact'/>
 
       <div id="Home"className='Home-content'>
@@ -26,23 +26,23 @@ const Home : React.FC = () => {
           <NinaReading width='535' height='723'/>
         </div>
       </div>
+      <div className='Home-main'>
+        <div id='About' className='Home-section'>
+          <About />
+        </div>
 
-      <div id='About' className='Home-section'>
-        <About />
+        <div id='Experience' className='Home-section'>
+          <Experience />
+        </div>
+
+        <div id='Projects' className='Home-section'>
+          <Projects />
+        </div>
+
+        <div id='Contact' className='Home-section'>
+          <Contact />
+        </div>
       </div>
-
-      <div id='Experience' className='Home-section'>
-        <Experience />
-      </div>
-
-      <div id='Projects' className='Home-section'>
-        <Projects />
-      </div>
-
-      <div id='Contact' className='Home-section'>
-        <Contact />
-      </div>
-
     </div>
   )
 }
