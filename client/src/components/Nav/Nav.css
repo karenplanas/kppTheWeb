@@ -36,4 +36,5 @@ button.Resume {
   font-weight: 600;
   color: var(--Black);
   background-color: transparent;
+  cursor: pointer;
 }

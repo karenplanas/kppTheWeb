@@ -2,6 +2,8 @@ import React from 'react'
 import JobSeekerHome from '../../images/jinderScreens/JobSeekerHome.png'
 import dogGoHome from '../../images/dogGoScreens/Home.png'
 import Ninas from '../../images/ninaScreens/NinasCookbook.jpg'
+import { GitHub } from '../icons/GitHub'
+// import { GitHubCat } from '../icons/GitHubCat'
 import './Projects.css'
 
 const Projects : React.FC = () => {
@@ -20,6 +22,8 @@ const Projects : React.FC = () => {
               To build this app from the ground up we use the following
             </p>
             <p><span className='bold'>Tech Stack:</span> Figma, React, TypeScript, FireBase, JWT, Express, MongoDB, Mongoose, SocketIO</p>
+            <a href='https://github.com/karenplanas/jinder' target='_blank' rel='noopener noreferrer'><GitHub /></a>
+            {/* <a><GitHubCat /></a> */}
           </div>
           <div className='Project-image'>
             <img className='JobSeekerHome' src={JobSeekerHome} alt='Jinder home screen'/>
@@ -38,7 +42,10 @@ const Projects : React.FC = () => {
               using Jest and Cypress, migrating the app frontend and backend to TypeScript, improving app design and styles, 
               adding social login feature, and making peer code reviews.
             </p>
-            <p><span className='bold'>Tech Stack:</span> React, TypeScript, Express, MongoDB, Mongoose, Jest, Cypress, GitHub</p>
+            <p>
+              <span className='bold'>Tech Stack:</span> React, TypeScript, Express, MongoDB, Mongoose, Jest, Cypress, GitHub.
+              <span> <a href='https://github.com/karenplanas/dogGo' target='_blank' rel='noopener noreferrer'><GitHub /></a></span>
+            </p>
           </div>
         </div>
 
@@ -48,7 +55,9 @@ const Projects : React.FC = () => {
             <span className='bold'>Nina's Cookbook</span> was born from the fact that I was always writing cooking recipes 
             on paper and hanging them on the fridge door with a magnet and somehow they end up disappearing; So I decided to build this app, 
             defined the project architecture, patiently created every UI/UX detail, component, function; and developed the app from the ground up 
-            using the following <span className='bold'>Tech Stack:</span> Figma, React, React Hook Forms, TypeScript, JWT, Koa, NodeJS, MongoDB, Mongoose.</p>
+            using the following <span className='bold'>Tech Stack:</span> Figma, React, React Hook Forms, TypeScript, JWT, Koa, NodeJS, MongoDB, Mongoose. 
+            <span> <a href='https://github.com/karenplanas/NinasCookbook' target='_blank' rel='noopener noreferrer'><GitHub /></a></span>
+          </p>
           </div>
           <div className='Project-image-ninas'>
             <img className='NinasCookbook' src={Ninas} alt='Ninas home screen'  />
