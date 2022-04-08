@@ -56,13 +56,13 @@ const Experience: React.FC = () => {
                 <li>Implement data model and screens for the following app features:
                   <div className='tasks-sublist'>
                     <ul>
-                      <li>the user profesional profile</li>
+                      <li>the user professional profile</li>
                       <li>the user liked job offers </li>
                       <li>the user account settings</li>
                     </ul>
                   </div>
                 </li>
-                <li>Implement user contex.t</li>
+                <li>Implement user context</li>
                 <li>Implement local storage and authorization.</li>
               </ul>
             </div>
@@ -75,7 +75,7 @@ const Experience: React.FC = () => {
               <p className='year'>2022</p>
             </div>
             <p>Web application that help users find local groomers, vets and pet stores; To manage bookings to 
-              pet friendly hotels, and sitters; And give recomendations on the best places to walk your dog. As member 
+              pet friendly hotels, and sitters; And give recommendations on the best places to walk your dog. As member 
               of this legacy project team I was responsible for:</p>
             <div className='tasks-ul'>
               <ul>
@@ -94,14 +94,14 @@ const Experience: React.FC = () => {
               <h3>Full-Stack developer <span className='not-bold'>at</span> Nina's Cookbook</h3>
               <p className='year'>2022</p>
             </div>
-            <p>Web application that allow users to list, search, create, share, review and rate cooking recipes.
+            <p>Web application that allows users to list, search, create, share, review and rate cooking recipes.
             My responsibilities included defining the project architecture, designing the UI/UX, and developing the app 
             from the ground up. </p>
             <p>Tools and libraries used:</p>
             <div className='tasks-ul'>
               <ul>
                 <li>Figma for UI/UX Design system, and high fidelity specs.</li>
-                <li>Notion for planing, defined MVP, user stories, and set their priorities.</li>
+                <li>Notion for planning, defined MVP, user stories, and set their priorities.</li>
                 <li>React with TypeScript on the front-end. React Hook forms for form handling.</li>
                 <li>Cloudinary service for images upload.</li>
                 <li>On the backend Koa server with NodeJS, MongoDB and Mongoose.</li>
@@ -119,11 +119,11 @@ const Experience: React.FC = () => {
             <div className='tasks-ul'>
               <ul>
                 <li>Process Service Requests for Identity and Access Management.</li>
-                <li>Manage users accounts creation and accesses to network resources.</li>
-                <li>Identify, research and resolves technical issues, incidents and problems.</li>
+                <li>Manage users accounts creation and access to network resources.</li>
+                <li>Identify, research and resolve technical issues, incidents and problems.</li>
                 <li>Record all incidents reported by users and escalate if required.</li>
                 <li>Support the users through the problem resolution process.</li>
-                <li>Writte and update process and technical documentation.</li>
+                <li>Write and update process and technical documentation.</li>
               </ul>
             </div>
             <p><span className='bold'>Tools used:</span> Ticketing systems, Active Directory, Windows Server, Windows Computer Management, Microsoft Teams</p>

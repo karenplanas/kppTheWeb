@@ -22,3 +22,18 @@
   display: flex;
   gap: 52px;
 }
+
+.Nav-icons {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--spacing-3);
+}
+
+button.Resume {
+  border-style: none;
+  font-family: Biotif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--Black);
+  background-color: transparent;
+}

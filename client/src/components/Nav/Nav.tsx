@@ -1,5 +1,8 @@
 import React from 'react'
-import { Tent } from '../icons/Tent'
+import { GitHub } from '../icons/GitHub'
+import { HomeIcon } from '../icons/HomeIcon'
+import { Linkedin } from '../icons/Linkedin'
+import resume from '../../cv/resume.pdf'
 import './Nav.css'
 interface Props {
   idHome: string
@@ -22,15 +25,25 @@ const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idCont
     }
   }
 
+  function handleClick()
+  {
+     window.open(resume,"_blank");
+  }
+
   return(
     <div className='Nav-content'>
-      <div><a href={`#${idHome}`} onClick={scrollTo(idHome)}><Tent /></a></div>
+      <div className='Nav-icons'>
+        <a href={`#${idHome}`} onClick={scrollTo(idHome)}><HomeIcon /></a>
+        <a href='https://www.linkedin.com/in/karen-planas'><Linkedin/></a>
+        <a href='https://github.com/karenplanas'><GitHub/></a>
+      </div>
       <nav>
         <a href={`#${idAbout}`} onClick={scrollTo(idAbout)}>About</a> 
         <a href={`#${idExperience}`} onClick={scrollTo(idExperience)}>Experience</a>
         <a href={`#${idProjects}`} onClick={scrollTo(idProjects)}>Projects</a> 
         <a href={`#${idContact}`} onClick={scrollTo(idContact)}>Contact</a>
-        <a href='/Resume/'>Resume</a>  
+        {/* <a href={resume} target='_blank' rel='noopener noreferrer'>Resume</a> */}
+        <button className='Resume' onClick={handleClick}>Resume</button>
       </nav>
     </div>
   )

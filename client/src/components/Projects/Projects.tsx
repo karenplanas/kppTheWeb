@@ -15,8 +15,8 @@ const Projects : React.FC = () => {
             <p>
               <span className='bold'>Jinder</span> is the result of the work of 4 programmers after 
               the idea to create an application that will make the process of job search and job applications easier, 
-              funnier, and effective through a simple, clean, and friendly UI/UX design. It's chat and video conference
-              features will help to stablish a closer connection between job seekers and employers. 
+              funnier, and effective through a simple, clean, and friendly UI/UX design. Its chat and video conference
+              features will help to establish a closer connection between job seekers and employers. 
               To build this app from the ground up we use the following
             </p>
             <p><span className='bold'>Tech Stack:</span> Figma, React, TypeScript, FireBase, JWT, Express, MongoDB, Mongoose, SocketIO</p>
@@ -32,11 +32,11 @@ const Projects : React.FC = () => {
           </div>
           <div className='Project-text'>
             <p>
-              <span className='bold'>DogGo</span> is a fun, beautiful and usefull app that will help users find the bests 
+              <span className='bold'>DogGo</span> is a fun, beautiful and useful app that will help users find the best 
               places to walk, groom, hill and buy treats for their pets; Book pet friendly hotels and sitters is also possible
               through the app. While working as a member of this legacy project team I was responsible for writing tests 
-              using Jest and Cypress, migrate the app frontend and backend to TypeScript, improve app desing and styles, 
-              add social login feature, make peer code reviews.
+              using Jest and Cypress, migrating the app frontend and backend to TypeScript, improving app design and styles, 
+              adding social login feature, and making peer code reviews.
             </p>
             <p><span className='bold'>Tech Stack:</span> React, TypeScript, Express, MongoDB, Mongoose, Jest, Cypress, GitHub</p>
           </div>
@@ -45,9 +45,9 @@ const Projects : React.FC = () => {
         <div className='Project-section-ninas'>
           <div className='Project-text'>
           <p>
-            <span className='bold'>Nina's Cookbook</span> was born from the fact that I was always writting cooking recipes 
-            on paper and hanging them on the fridge door with a magnet and somehow they end up disapearing; Hence I created, 
-            patienly curated every UI/UX detail, component, function, defined the project architecture, and developed the app from the ground up 
+            <span className='bold'>Nina's Cookbook</span> was born from the fact that I was always writing cooking recipes 
+            on paper and hanging them on the fridge door with a magnet and somehow they end up disappearing; So I decided to build this app, 
+            defined the project architecture, patiently created every UI/UX detail, component, function; and developed the app from the ground up 
             using the following <span className='bold'>Tech Stack:</span> Figma, React, React Hook Forms, TypeScript, JWT, Koa, NodeJS, MongoDB, Mongoose.</p>
           </div>
           <div className='Project-image-ninas'>
