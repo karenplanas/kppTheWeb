@@ -38,3 +38,7 @@ button.Resume {
   background-color: transparent;
   cursor: pointer;
 }
+.HomeIcon-image-container img{
+  width: 26px;
+  height: 26px;
+}

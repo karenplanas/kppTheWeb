@@ -1,8 +1,9 @@
 import React from 'react'
 import { GitHub } from '../icons/GitHub'
-import { HomeIcon } from '../icons/HomeIcon'
+// import { HomeIcon } from '../icons/HomeIcon'
 import { Linkedin } from '../icons/Linkedin'
 import resume from '../../cv/resume.pdf'
+import home from '../../images/Home.png'
 import './Nav.css'
 interface Props {
   idHome: string
@@ -33,7 +34,12 @@ const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idCont
   return(
     <div className='Nav-content'>
       <div className='Nav-icons'>
-        <a href={`#${idHome}`} onClick={scrollTo(idHome)}><HomeIcon /></a>
+        {/* <a href={`#${idHome}`} onClick={scrollTo(idHome)}><HomeIcon /></a> */}
+        <a href={`#${idHome}`} onClick={scrollTo(idHome)}>
+          <div className='HomeIcon-image-container'>
+            <img src={home} alt='Home icon' />
+          </div>
+        </a>
         <a href='https://www.linkedin.com/in/karen-planas'><Linkedin/></a>
         <a href='https://github.com/karenplanas'><GitHub/></a>
       </div>
