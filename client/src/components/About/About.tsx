@@ -1,4 +1,5 @@
 import React from 'react'
+import { NinaLunettes } from '../illustrations/NinaLunettes'
 import './About.css'
 
 const About : React.FC = () => {
@@ -15,26 +16,34 @@ const About : React.FC = () => {
           
         <p>Lately I've been working on some projects by myself and with some friends, 
           you can check them out on the projects section.</p><br/>
-          
-        <p>This is the tech stack i’ve been working with :
-          <ul className='About-list'>
-            <div>
-              <li>Figma</li>
-              <li>React</li>
-              <li>CSS</li>
-            </div>
-            <div>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>Express</li>
-            </div>
-            <div>
-              <li>Koa</li>
-              <li>MongoDB</li>
-              <li>Mongoose</li>
-            </div>
-          </ul>
-        </p>
+        
+        <div className='About-bottom'>
+          <div>
+            <NinaLunettes width='240' height='270'/>
+          </div>
+          <div>
+            <p>This is the tech stack i’ve been working with :
+              <ul className='About-list '>
+                <div>
+                  <li>Figma</li>
+                  <li>React</li>
+                  <li>CSS</li>
+                </div>
+                <div>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>Express</li>
+                </div>
+                <div>
+                  <li>Koa</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                </div>
+              </ul>
+            </p>
+          </div>
+
+        </div>
       </div>
     </div>
   )
