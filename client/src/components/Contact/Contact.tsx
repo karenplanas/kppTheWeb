@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
             <NinaBiking width='366' height='351'/>
           </div>
           <div className='author'>
-            <p>Designed and built by Karen Planas</p>
+            <p>Designed and built by <span className='bold'>Karen Planas</span></p>
             <p>Illustrations from Open-peeps by Pablo Stanley </p>
           </div>
         </div>

@@ -59,8 +59,6 @@
   flex-direction: column;
   gap: var(--spacing-2);
   list-style: inside;
-  /* list-style-type: '✓ '; */
-  /* list-style-type: '🎯 '; */
   list-style-type: '📌  ';
 }
 
@@ -80,6 +78,7 @@
 
 .tasks-ul {
   padding: var(--spacing-2);
+  font-size: 1.1rem;
 }
 
 p.year {
@@ -108,7 +107,7 @@ p.year {
   height: 3px;
   left: 0;
   display: block;
-  background: var(--Cotton-candy);
+  background: var(--Djon);
   transform: translate3d(0,5px,0);
   transition: all .2s cubic-bezier(.175,.885,.32,1.275);
   opacity: 0;
