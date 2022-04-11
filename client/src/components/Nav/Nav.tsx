@@ -14,16 +14,16 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idContact}) => {
-
-    const { height } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   // https://stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
   const scrollTo = (id: string) => {
     return (event: React.MouseEvent) => {
       event.preventDefault();
+
       let yOffset = 0;
-      if ( height > 750) {
-        yOffset = -70; 
+      if ( width > 750) {
+        yOffset = -100; 
       } else {
         yOffset = -170;
       }
