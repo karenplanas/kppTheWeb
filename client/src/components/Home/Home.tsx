@@ -22,7 +22,6 @@ const Home : React.FC = () => {
           </div>
         </div>
         <div className='NinaReading-container'>
-          {/* <NinaReading width='570' height='770'/> */}
           <NinaReading className='NinaReading-content' width='535' />
         </div>
       </div>

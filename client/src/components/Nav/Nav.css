@@ -24,20 +24,45 @@
   gap: 52px;
 }
 
+nav a:before {
+  z-index: 5;
+  content: "";
+  width: 100%;
+  position: relative;
+  bottom: -28px;
+  height: 3px;
+  left: 0;
+  display: block;
+  background: var(--Djon);
+  transform: translate3d(0,5px,0);
+  transition: all .2s cubic-bezier(.175,.885,.32,1.275);
+  opacity: 0;
+}
+
+nav a:nth-child(odd):hover:before {
+  opacity: 1;
+  transform: translateZ(0) rotate(1deg);
+}
+
+nav a.selected:nth-child(odd):before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1,1.1,1.1)  rotate(1deg);
+}
+
+nav a:nth-child(even):hover:before {
+  opacity: 1;
+  transform: translateZ(0) rotate(-1deg);
+}
+nav a.selected:nth-child(even):before {
+  opacity: 1;
+  transform: translateZ(0) scale3d(1.1,1.1,1.1)  rotate(-1deg);
+}
+
+
 .Nav-icons {
   display: flex;
   align-items: flex-end;
-  gap: var(--spacing-3);
-}
-
-button.Resume {
-  border-style: none;
-  font-family: Biotif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--Black);
-  background-color: transparent;
-  cursor: pointer;
+  gap: var(--spacing-4);
 }
 
 .HomeIcon-image-container img{
