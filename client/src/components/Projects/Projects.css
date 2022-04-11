@@ -49,6 +49,12 @@ img.NinasCookbook {
   object-fit: contain;
 }
 
+@media screen and (min-width: 750px){
+  .Projects-content .Project-section:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
 @media screen and (max-width: 750px){
   .Project-section {
     flex-direction: column;
@@ -56,5 +62,9 @@ img.NinasCookbook {
 
   .Projects-container {
     width: 100%;
+  }
+
+  .Project-image {
+    align-self: center;
   }
 }

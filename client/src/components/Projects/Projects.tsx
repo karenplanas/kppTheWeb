@@ -31,9 +31,6 @@ const Projects : React.FC = () => {
         </div>
 
         <div className='Project-section'>
-          <div className='Project-image'>
-            <img className='dogGoHome' src={dogGoHome} alt='DogGo home screen'/>
-          </div>
           <div className='Project-text'>
             <p>
               <span className='bold'>DogGo</span> is a fun, beautiful and useful app that will help users find the best 
@@ -44,6 +41,9 @@ const Projects : React.FC = () => {
             </p>
             <p><span className='bold'>Tech Stack:</span> React, TypeScript, Express, MongoDB, Mongoose, Jest, Cypress, GitHub.</p>
             <p> Check the repo here <a href='https://github.com/karenplanas/dogGo' target='_blank' rel='noopener noreferrer'><GitHub /></a></p>
+          </div>
+          <div className='Project-image'>
+            <img className='dogGoHome' src={dogGoHome} alt='DogGo home screen'/>
           </div>
         </div>
 

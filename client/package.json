@@ -20,7 +20,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "deploy": "aws s3 cp ./build s3://kpp-portfolio --recursive",
+    "deploy": "npm run deploy-to-s3 && npm run invalidate-cache",
+    "deploy-to-s3": "aws s3 cp ./build s3://kpp-portfolio --recursive",
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E206ZNAKQDDICT --paths \"/index.html\"",
     "predeploy": "npm run build",
     "build": "react-scripts build",
     "test": "react-scripts test",
