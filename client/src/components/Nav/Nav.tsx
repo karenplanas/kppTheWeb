@@ -1,6 +1,5 @@
 import React from 'react'
 import { GitHub } from '../icons/GitHub'
-// import { HomeIcon } from '../icons/HomeIcon'
 import { Linkedin } from '../icons/Linkedin'
 import resume from '../../cv/resume.pdf'
 import home from '../../images/Home.png'
@@ -34,14 +33,13 @@ const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idCont
   return(
     <div className='Nav-content'>
       <div className='Nav-icons'>
-        {/* <a href={`#${idHome}`} onClick={scrollTo(idHome)}><HomeIcon /></a> */}
         <a href={`#${idHome}`} onClick={scrollTo(idHome)}>
           <div className='HomeIcon-image-container'>
             <img src={home} alt='Home icon' />
           </div>
         </a>
-        <a href='https://www.linkedin.com/in/karen-planas'><Linkedin/></a>
-        <a href='https://github.com/karenplanas'><GitHub/></a>
+        <a href='https://www.linkedin.com/in/karen-planas' target='_blank' rel='noopener noreferrer'><Linkedin/></a>
+        <a href='https://github.com/karenplanas' target='_blank' rel='noopener noreferrer'><GitHub/></a>
       </div>
       <nav>
         <a href={`#${idAbout}`} onClick={scrollTo(idAbout)}>About</a> 

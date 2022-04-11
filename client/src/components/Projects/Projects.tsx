@@ -21,8 +21,10 @@ const Projects : React.FC = () => {
               features will help to establish a closer connection between job seekers and employers. 
               To build this app from the ground up we use the following
             </p>
-            <p><span className='bold'>Tech Stack:</span> Figma, React, TypeScript, FireBase, JWT, Express, MongoDB, Mongoose, SocketIO</p>
-            <a href='https://github.com/karenplanas/jinder' target='_blank' rel='noopener noreferrer'><GitHub /></a>
+            <p><span className='bold'>Tech Stack:</span> Figma, React, TypeScript, FireBase, JWT, Express, MongoDB, Mongoose, SocketIO.</p>
+            <p>Check the repo here <a href='https://github.com/karenplanas/jinder' target='_blank' rel='noopener noreferrer'><GitHub /></a></p>
+            
+            
             {/* <a><GitHubCat /></a> */}
           </div>
           <div className='Project-image'>
@@ -42,10 +44,8 @@ const Projects : React.FC = () => {
               using Jest and Cypress, migrating the app frontend and backend to TypeScript, improving app design and styles, 
               adding social login feature, and making peer code reviews.
             </p>
-            <p>
-              <span className='bold'>Tech Stack:</span> React, TypeScript, Express, MongoDB, Mongoose, Jest, Cypress, GitHub.
-              <span> <a href='https://github.com/karenplanas/dogGo' target='_blank' rel='noopener noreferrer'><GitHub /></a></span>
-            </p>
+            <p><span className='bold'>Tech Stack:</span> React, TypeScript, Express, MongoDB, Mongoose, Jest, Cypress, GitHub.</p>
+            <p> Check the repo here <a href='https://github.com/karenplanas/dogGo' target='_blank' rel='noopener noreferrer'><GitHub /></a></p>
           </div>
         </div>
 
@@ -56,7 +56,7 @@ const Projects : React.FC = () => {
             on paper and hanging them on the fridge door with a magnet and somehow they end up disappearing; So I decided to build this app, 
             defined the project architecture, patiently created every UI/UX detail, component, function; and developed the app from the ground up 
             using the following <span className='bold'>Tech Stack:</span> Figma, React, React Hook Forms, TypeScript, JWT, Koa, NodeJS, MongoDB, Mongoose. 
-            <span> <a href='https://github.com/karenplanas/NinasCookbook' target='_blank' rel='noopener noreferrer'><GitHub /></a></span>
+            <span> Check the repo here <a href='https://github.com/karenplanas/NinasCookbook' target='_blank' rel='noopener noreferrer'><GitHub /></a></span>
           </p>
           </div>
           <div className='Project-image-ninas'>
