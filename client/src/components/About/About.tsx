@@ -18,31 +18,23 @@ const About : React.FC = () => {
           you can check them out on the projects section.</p><br/>
         
         <div className='About-bottom'>
+          {/* <div className='About-bottom-illustration'> */}
+            <NinaLunettes width='240' height='250'/>          
+          {/* </div> */}
           <div>
-            <NinaLunettes width='240' height='270'/>
+            <p>This is the tech stack i’ve been working with:</p>
+            <ul className='About-list '>
+              <li>Figma</li>
+              <li>React</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>Express</li>
+              <li>Koa</li>
+              <li>MongoDB</li>
+              <li>Mongoose</li>
+            </ul>
           </div>
-          <div>
-            <p>This is the tech stack i’ve been working with :
-              <ul className='About-list '>
-                <div>
-                  <li>Figma</li>
-                  <li>React</li>
-                  <li>CSS</li>
-                </div>
-                <div>
-                  <li>JavaScript</li>
-                  <li>TypeScript</li>
-                  <li>Express</li>
-                </div>
-                <div>
-                  <li>Koa</li>
-                  <li>MongoDB</li>
-                  <li>Mongoose</li>
-                </div>
-              </ul>
-            </p>
-          </div>
-
         </div>
       </div>
     </div>

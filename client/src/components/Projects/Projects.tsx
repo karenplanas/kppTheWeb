@@ -9,7 +9,7 @@ import './Projects.css'
 const Projects : React.FC = () => {
   return (
     <div className='Projects-container'>
-      <h2>What i've build</h2>
+      <h2>What I've build</h2>
       <div className='Projects-content'>
 
         <div className='Project-section'>
@@ -24,8 +24,6 @@ const Projects : React.FC = () => {
             <p><span className='bold'>Tech Stack:</span> Figma, React, TypeScript, FireBase, JWT, Express, MongoDB, Mongoose, SocketIO.</p>
             <p>Check the repo here <a href='https://github.com/karenplanas/jinder' target='_blank' rel='noopener noreferrer'><GitHub /></a></p>
             
-            
-            {/* <a><GitHubCat /></a> */}
           </div>
           <div className='Project-image'>
             <img className='JobSeekerHome' src={JobSeekerHome} alt='Jinder home screen'/>

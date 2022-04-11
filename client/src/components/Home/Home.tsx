@@ -23,7 +23,7 @@ const Home : React.FC = () => {
         </div>
         <div className='NinaReading-container'>
           {/* <NinaReading width='570' height='770'/> */}
-          <NinaReading width='535' height='723'/>
+          <NinaReading className='NinaReading-content' width='535' />
         </div>
       </div>
       <div className='Home-main'>

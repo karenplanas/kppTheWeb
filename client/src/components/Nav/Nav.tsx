@@ -4,6 +4,7 @@ import { Linkedin } from '../icons/Linkedin'
 import resume from '../../cv/resume.pdf'
 import home from '../../images/Home.png'
 import './Nav.css'
+import { useWindowDimensions } from '../../hooks/useWindowDimensions'
 interface Props {
   idHome: string
   idAbout: string
@@ -13,11 +14,20 @@ interface Props {
 }
 
 const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idContact}) => {
+
+    const { height } = useWindowDimensions();
+
   // https://stackoverflow.com/questions/24665602/scrollintoview-scrolls-just-too-far
   const scrollTo = (id: string) => {
     return (event: React.MouseEvent) => {
       event.preventDefault();
-      const yOffset = -70; 
+      let yOffset = 0;
+      if ( height > 750) {
+        yOffset = -70; 
+      } else {
+        yOffset = -170;
+      }
+      
       const element = document.getElementById(id);
       const y = element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
@@ -25,10 +35,10 @@ const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idCont
     }
   }
 
-  function handleClick()
-  {
-     window.open(resume,"_blank");
-  }
+  // function handleClick()
+  // {
+  //    window.open(resume,"_blank");
+  // }
 
   return(
     <div className='Nav-content'>
@@ -46,8 +56,8 @@ const Nav: React.FC<Props> = ({idHome, idAbout, idProjects, idExperience, idCont
         <a href={`#${idExperience}`} onClick={scrollTo(idExperience)}>Experience</a>
         <a href={`#${idProjects}`} onClick={scrollTo(idProjects)}>Projects</a> 
         <a href={`#${idContact}`} onClick={scrollTo(idContact)}>Contact</a>
-        {/* <a href={resume} target='_blank' rel='noopener noreferrer'>Resume</a> */}
-        <button className='Resume' onClick={handleClick}>Resume</button>
+        <a href={resume} target='_blank' rel='noopener noreferrer'>Resume</a>
+        {/* <button className='Resume' onClick={handleClick}>Resume</button> */}
       </nav>
     </div>
   )

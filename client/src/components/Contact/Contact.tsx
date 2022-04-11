@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
         </p>
         <div className='Contact-bottom'>
           <div className='NinaBiking-container'>
-            <NinaBiking width='366' height='351'/>
+            <NinaBiking className='NinaBiking-content' width='366' />
           </div>
           <div className='author'>
             <p>Designed and built by <span className='bold'>Karen Planas</span></p>
